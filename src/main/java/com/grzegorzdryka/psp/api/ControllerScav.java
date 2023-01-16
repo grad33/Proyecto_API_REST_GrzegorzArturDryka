@@ -29,13 +29,9 @@ public class ControllerScav {
     }
 
     @PostMapping("/scav")
-    public ResponseEntity<Scav> createScav(@Valid @RequestBody Scav scav) {
-        Optional<Scav> Scavs = _ScavRepository.findById(scav.getId_scav());
-        if (Scavs.isPresent()){
-            return ResponseEntity.status(HttpStatus.CONFLICT).build();
-        }
-        Scav ScavCreado = _ScavRepository.save(scav);
-        return ResponseEntity.status(HttpStatus.CREATED).body(ScavCreado);
+    public ResponseEntity<Scav> createScav(@RequestBody AddScavDTO scavDTO) {
+        Scav scav=_ScavRepository.save(scavDTO.toEntity(scavDTO));
+        return ResponseEntity.status(HttpStatus.CREATED).body(scav);
     }
 
     @PutMapping("/scav")

@@ -29,13 +29,9 @@ public class ControllerMapa {
     }
 
     @PostMapping("/mapa")
-    public ResponseEntity<Mapa> createMapa(@Valid @RequestBody Mapa map) {
-        Optional<Mapa> mapas = _MapaRepository.findById(map.getId());
-        if (mapas.isPresent()){
-            return ResponseEntity.status(HttpStatus.CONFLICT).build();
-        }
-        Mapa MapaCreado = _MapaRepository.save(map);
-        return ResponseEntity.status(HttpStatus.CREATED).body(MapaCreado);
+    public ResponseEntity<Mapa> createMapa(@RequestBody AddMapaDTO mapaDTO) {
+        Mapa mapa= _MapaRepository.save(mapaDTO.toEntity(mapaDTO));
+        return ResponseEntity.status(HttpStatus.CREATED).body(mapa);
     }
 
     @PutMapping("/mapa")

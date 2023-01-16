@@ -222,7 +222,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "    {\r\n        \"id\": 2,\r\n        \"mapa\": \"SHORELINE\",\r\n        \"duracion\": 2300\r\n    }",
+					"raw": "    {\r\n        \"mapa\": \"SHORELINE\",\r\n        \"duracion\": 2300\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -251,7 +251,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"id_player\": 2,\r\n        \"mapa\": {\r\n            \"id\": 2\r\n        },\r\n        \"nombre\": \"Carola\",\r\n        \"faccion\": \"USEC\",\r\n        \"nivel\": 13\r\n    }",
+					"raw": "{\r\n        \"mapa\": {\r\n            \"id\": 2\r\n        },\r\n        \"nombre\": \"Carola\",\r\n        \"faccion\": \"USEC\",\r\n        \"nivel\": 13\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -280,7 +280,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "    {\r\n        \"id_scav\": 2,\r\n        \"mapa\": {\r\n            \"id\": 1\r\n        },\r\n        \"nombre\": \"Killa\"\r\n    }",
+					"raw": "    {\r\n        \"mapa\": {\r\n            \"id\": 1\r\n        },\r\n        \"nombre\": \"Killa\"\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"

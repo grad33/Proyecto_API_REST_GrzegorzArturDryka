@@ -31,13 +31,9 @@ public class ControllerPmc {
     }
 
     @PostMapping("/jugador")
-    public ResponseEntity<Pmc> createPmc(@Valid @RequestBody Pmc pmc) {
-        Optional<Pmc> pmcs = _JugadorRepository.findById(pmc.getId_player());
-        if (pmcs.isPresent()){
-            return ResponseEntity.status(HttpStatus.CONFLICT).build();
-        }
-        Pmc pmcCreado = _JugadorRepository.save(pmc);
-        return ResponseEntity.status(HttpStatus.CREATED).body(pmcCreado);
+    public ResponseEntity<Pmc> createPmc(@RequestBody AddPmcDTO pmcDTO) {
+        Pmc pmc=_JugadorRepository.save(pmcDTO.toEntity(pmcDTO));
+        return ResponseEntity.status(HttpStatus.CREATED).body(pmc);
     }
 
     @PutMapping("/jugador")
