@@ -20,5 +20,5 @@ Sin explicar en profundidad el funcionamiento del juego para comprender la relac
 
 ## Peticiones Postman
 
-La api es accesible desde la aplicacion **_Postman_**. Dicha aplicacion permite exportar y importar los metodos de controlador `GET`, `GETall`, `PUT`, `POST` y `DELETE`. 
+La api es accesible desde la aplicacion **_Postman_**. Dicha aplicacion permite exportar y importar los metodos de controlador `GETall`, `GETbyid`, `PUT`, `POST` y `DELETE`. 
 Las peticiones exportadas  están localizadas en este [json](src/main/resources/peticiones api Tarkov.postman_collection.json).
