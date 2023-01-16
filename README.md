@@ -18,6 +18,7 @@ Explicando brevemente mi proyecto, la base de datos sql localizada en [data.sql]
 
 Sin explicar en profundidad el funcionamiento del juego para comprender la relación entre los tres, `uno o varios pmcs` y `uno o varios scavs` juegan en un mapa. Una partida en un mapa concreto comienza y termina en el mismo, por ello el mapa se puede repetir, pero tiene `distinta id` de partida.
 
-## Ubicación peticiones Postman
+## Peticiones Postman
 
-Las peticiones exportadas **_Postman_** están localizadas en este [json](src/main/resources/peticiones api Tarkov.postman_collection.json).
+La api es accesible desde la aplicacion **_Postman_**. Dicha aplicacion permite exportar y importar los metodos de controlador `GET`, `GETall`, `PUT`, `POST` y `DELETE`. 
+Las peticiones exportadas  están localizadas en este [json](src/main/resources/peticiones api Tarkov.postman_collection.json).
