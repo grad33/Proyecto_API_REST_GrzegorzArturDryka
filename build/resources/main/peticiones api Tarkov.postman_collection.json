@@ -1,0 +1,384 @@
+{
+	"info": {
+		"_postman_id": "5dfa7a71-cc83-4d7a-aaca-c6cfec3395f9",
+		"name": "peticiones api Tarkov",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAll Map",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tarkov/mapa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarkov",
+						"mapa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll Pmc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tarkov/jugador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarkov",
+						"jugador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll Scav",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tarkov/scav",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarkov",
+						"scav"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById Map",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tarkov/mapa/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarkov",
+						"mapa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById Pmc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tarkov/jugador/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarkov",
+						"jugador",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById Scav",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tarkov/scav/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarkov",
+						"scav",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Map",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 1,\r\n        \"mapa\": \"Interchange\",\r\n        \"duracion\": 2300\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tarkov/mapa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarkov",
+						"mapa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Pmc",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id_player\": 1,\r\n        \"mapa\": {\r\n            \"id\": 1\r\n        },\r\n        \"nombre\": \"Ricoy\",\r\n        \"faccion\": \"USEC\",\r\n        \"nivel\": 13\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tarkov/jugador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarkov",
+						"jugador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Scav",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id_scav\": 1,\r\n        \"mapa\": {\r\n            \"id\": 1\r\n        },\r\n        \"nombre\": \"Pietrov\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tarkov/scav",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarkov",
+						"scav"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Map",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"mapa\": \"SHORELINE\",\r\n        \"duracion\": 2300\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tarkov/mapa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarkov",
+						"mapa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Pmc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"mapa\": {\r\n            \"id\": 2\r\n        },\r\n        \"nombre\": \"Carola\",\r\n        \"faccion\": \"USEC\",\r\n        \"nivel\": 13\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tarkov/jugador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarkov",
+						"jugador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Scav",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"mapa\": {\r\n            \"id\": 1\r\n        },\r\n        \"nombre\": \"Killa\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tarkov/scav",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarkov",
+						"scav"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Map",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tarkov/mapa?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarkov",
+						"mapa"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Pmc",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tarkov/jugador?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarkov",
+						"jugador"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Scav",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tarkov/scav?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tarkov",
+						"scav"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
