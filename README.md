@@ -4,7 +4,7 @@
 El proyecto está realizado únicamente por _`Grzegorz Artur Dryka`_.
 La idea de la api es tratar datos de las partidas que están siendo jugadas.
 
-## Fuentes
+## FuentesAAAAAAAAAAAA
 
 La API está basada en un videojuego llamado "**_Escape from Tarkov_**", y más concretamente en una de sus wikis. Dicha wiki posee una api https://tarkov.dev/api/ que funciona con `GraphQL`.
 
