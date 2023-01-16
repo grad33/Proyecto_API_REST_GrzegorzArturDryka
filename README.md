@@ -1,6 +1,5 @@
 # Proyecto_API_REST_GrzegorzArturDryka
 
-PROBANDOPROBANDOPROBANDOPROBANDOPROBANDOPROBANDOPROBANDOPROBANDOPROBANDO
 
 El proyecto está realizado únicamente por _`Grzegorz Artur Dryka`_.
 La idea de la api es tratar datos de las partidas que están siendo jugadas.
